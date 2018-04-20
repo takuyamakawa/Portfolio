@@ -1,8 +1,25 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container{
+  padding-top: 20px;
+  text-align: center;
+}
+
 .title{
-  font-size: 200px;
+  font-size: 80px;
+
+  @media (min-width: 800px) {
+    font-size: 150px;
+  }
+}
+
+.subtitle{
+  font-size: 20px;
+
+  @media (min-width: 800px) {
+    font-size: 40px;
+  }
 }
 
 header {
@@ -11,7 +28,7 @@ header {
   z-index: 1;
   width: 100%;
   background-color: lightgray;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .header-logo {
@@ -31,14 +48,14 @@ header {
   font-size: 20px;
   float: right;
   padding-right: 30px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .header-menus li {
   float: left;
   line-height: 64px;
   font-weight: bolder;
-  padding-left: 15px;
+  padding-left: 30px;
 
 }
 

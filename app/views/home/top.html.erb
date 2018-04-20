@@ -1,2 +1,47 @@
-<h1>Home#top</h1>
-<p>Find me in app/views/home/top.html.erb</p>
+<script type="text/javascript">
+$(function () {
+    $('a[href^="#"]').click(function () {
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, 'swing');
+        return false;
+    });
+});
+</script>
+
+
+<header>
+      <!-- <div class="header-logo">
+        <%= link_to("TweetApp", "/") %>
+      </div> -->
+      <ul class="header-menus has-text-primary">
+        <li><%= link_to 'About', '#about' %></li>
+        <li><%= link_to 'Works', '#works' %></li>
+        <li><%= link_to 'Profile', '#profile' %></li>
+      </ul>
+    </header>
+
+<section class="section">
+    <div class="container">
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Bulma</strong>!
+      </p>
+    </div>
+  </section>
+
+<div id="about">
+  About
+</div>
+
+<div id="works">
+  Works
+</div>
+
+<div id="profile">
+  Profile
+</div>

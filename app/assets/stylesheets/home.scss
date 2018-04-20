@@ -1,3 +1,59 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.title{
+  font-size: 200px;
+}
+
+header {
+  height: 60px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: lightgray;
+  opacity: 0.5;
+}
+
+.header-logo {
+  float: left;
+  padding-left: 20px;
+  color: gray;
+  font-size: 22px;
+  line-height: 64px;
+}
+
+.header-logo a{
+  color: gray;
+  font-size: 22px;
+}
+
+.header-menus {
+  font-size: 20px;
+  float: right;
+  padding-right: 30px;
+  opacity: 0.7;
+}
+
+.header-menus li {
+  float: left;
+  line-height: 64px;
+  font-weight: bolder;
+  padding-left: 15px;
+
+}
+
+.header-menus a {
+  float: left;
+}
+
+.header-menus .fa {
+  padding-right: 5px;
+}
+
+.header-menus input[type="submit"] {
+  padding: 0 20px;
+  float: left;
+  line-height: 64px;
+  margin: 0;
+  opacity: 0.7;
+}

@@ -1,2 +1,75 @@
-<h1>Home#top</h1>
-<p>Find me in app/views/home/top.html.erb</p>
+<script type="text/javascript">
+
+// ページ内リンクのジャンプアニメーション
+$(function () {
+  $('a[href^="#"]').click(function () {
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var headerHeight = 60;
+		var position = target.offset().top - headerHeight;
+    $("html, body").animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
+});
+
+//Topの表示アニメーション
+$(function() {
+  $('#top').hide().fadeIn(1500);
+});
+</script>
+
+<header>
+  <!-- <div class="header-logo">
+  <%= link_to("TweetApp", "/") %>
+</div> -->
+<ul class="header-menus has-text-primary">
+  <li><%= link_to 'About', '#about' %></li>
+  <li><%= link_to 'Works', '#works' %></li>
+  <li><%= link_to 'Profile', '#profile' %></li>
+</ul>
+</header>
+
+<section class="section" id="top">
+  <div class="container">
+    <h1 class="title" id="title">
+      Takuya's <br>
+      Portfolio
+    </h1>
+    <p class="subtitle" id="subtitle">
+      No Challenge, No Life.<br>
+      Any Lifes, Be Fully.
+    </p>
+  </div>
+</section>
+
+<section class="section about-top" id="about">
+  <div class="container">
+    About
+  </div>
+</section>
+
+<section class="section works-top" id="works">
+  <div class="container">
+    Works
+  </div>
+</section>
+
+<section class="section profile-top" id="profile">
+  <div class="container">
+    Profile
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      2018 @Takuya Yamakawa
+      <div id="social-icon">
+        <a href="https://www.facebook.com/profile.php?id=100005504384938"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/y_takuya1206/"><i class="fa fa-instagram fa-2x"></i></a>
+        <a href="https://github.com/takuyamakawa"><i class="fa fa-github fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>

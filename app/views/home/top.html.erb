@@ -2,14 +2,14 @@
 
 // ページ内リンクのジャンプアニメーション
 $(function () {
-    $('a[href^="#"]').click(function () {
-        var speed = 500;
-        var href= $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top;
-        $("html, body").animate({scrollTop:position}, speed, 'swing');
-        return false;
-    });
+  $('a[href^="#"]').click(function () {
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
 });
 
 //Topの表示アニメーション
@@ -19,37 +19,43 @@ $(function() {
 </script>
 
 <header>
-      <!-- <div class="header-logo">
-        <%= link_to("TweetApp", "/") %>
-      </div> -->
-      <ul class="header-menus has-text-primary">
-        <li><%= link_to 'About', '#about' %></li>
-        <li><%= link_to 'Works', '#works' %></li>
-        <li><%= link_to 'Profile', '#profile' %></li>
-      </ul>
-    </header>
+  <!-- <div class="header-logo">
+  <%= link_to("TweetApp", "/") %>
+</div> -->
+<ul class="header-menus has-text-primary">
+  <li><%= link_to 'About', '#about' %></li>
+  <li><%= link_to 'Works', '#works' %></li>
+  <li><%= link_to 'Profile', '#profile' %></li>
+</ul>
+</header>
 
 <section class="section">
-    <div class="container">
-      <h1 class="title" id="title">
-        Takuya's <br>
-        Portfolio
-      </h1>
-      <p class="subtitle" id="subtitle">
-        No Challenge, No Life.<br>
-        Any Lifes, Be Fully.
-      </p>
-    </div>
-  </section>
+  <div class="container">
+    <h1 class="title" id="title">
+      Takuya's <br>
+      Portfolio
+    </h1>
+    <p class="subtitle" id="subtitle">
+      No Challenge, No Life.<br>
+      Any Lifes, Be Fully.
+    </p>
+  </div>
+</section>
 
-<div id="about">
-  About
-</div>
+<section class="section about-top">
+  <div class="container" id="about" >
+    About
+  </div>
+</section>
 
-<div id="works">
-  Works
-</div>
+<section class="section works-top">
+  <div class="container" id="works" >
+    Works
+  </div>
+</section>
 
-<div id="profile">
-  Profile
-</div>
+<section class="section profile-top">
+  <div class="container" id="profile">
+    Profile
+  </div>
+</section>

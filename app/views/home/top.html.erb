@@ -6,7 +6,8 @@ $(function () {
     var speed = 500;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
+    var headerHeight = 60;
+		var position = target.offset().top - headerHeight;
     $("html, body").animate({scrollTop:position}, speed, 'swing');
     return false;
   });
@@ -42,20 +43,20 @@ $(function() {
   </div>
 </section>
 
-<section class="section about-top">
-  <div class="container" id="about" >
+<section class="section about-top" id="about">
+  <div class="container">
     About
   </div>
 </section>
 
-<section class="section works-top">
-  <div class="container" id="works" >
+<section class="section works-top" id="works">
+  <div class="container">
     Works
   </div>
 </section>
 
-<section class="section profile-top">
-  <div class="container" id="profile">
+<section class="section profile-top" id="profile">
+  <div class="container">
     Profile
   </div>
 </section>
@@ -63,12 +64,11 @@ $(function() {
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      2018 Takuya Yamakawa
+      2018 @Takuya Yamakawa
       <div id="social-icon">
         <a href="https://www.facebook.com/profile.php?id=100005504384938"><i class="fa fa-facebook fa-2x"></i></a>
         <a href="https://www.instagram.com/y_takuya1206/"><i class="fa fa-instagram fa-2x"></i></a>
-        <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-        <a href="#"><i class="fa fa-rss fa-2x"></i></a>
+        <a href="https://github.com/takuyamakawa"><i class="fa fa-github fa-2x"></i></a>
       </div>
     </div>
   </div>

@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #top{
-  padding-top: 50px;
+  padding: 60px 0 70px 0;
   text-align: center;
 }
 
@@ -103,24 +103,27 @@ header {
 }
 
 #social-icon a {
-  display: block;
-  float: left;
-  margin: 0 5px 5px 0;
+  display: inline-block;
+  margin: 40px 30px -50px 0;
   padding: 0;
   color: #fff;
-  display: inline-block;
-
 }
 #social-icon i {
   width: 50px;
   height: 50px;
-  margin: 0;
-  background: #c6bb80;
   line-height: 50px;
 
+  @media (min-width: 800px) {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  margin: 0;
+  background: #c6bb80;
+  border-radius: 50%;
 }
 
 #social-icon a:hover .fa-instagram { background: #CF2E92; }
 #social-icon a:hover .fa-facebook { background: #3b5998; }
-#social-icon a:hover .fa-google-plus { background: #c53727; }
-#social-icon a:hover .fa-rss { background: #ff8c00; }
+#social-icon a:hover .fa-github { background: #000; }

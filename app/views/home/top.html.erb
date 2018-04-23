@@ -1,4 +1,6 @@
 <script type="text/javascript">
+
+// ページ内リンクのジャンプアニメーション
 $(function () {
     $('a[href^="#"]').click(function () {
         var speed = 500;
@@ -8,6 +10,11 @@ $(function () {
         $("html, body").animate({scrollTop:position}, speed, 'swing');
         return false;
     });
+});
+
+//Topの表示アニメーション
+$(function() {
+  $('.section').hide().fadeIn(1500);
 });
 </script>
 
@@ -24,11 +31,11 @@ $(function () {
 
 <section class="section">
     <div class="container">
-      <h1 class="title">
+      <h1 class="title" id="title">
         Takuya's <br>
         Portfolio
       </h1>
-      <p class="subtitle">
+      <p class="subtitle" id="subtitle">
         No Challenge, No Life.<br>
         Any Lifes, Be Fully.
       </p>

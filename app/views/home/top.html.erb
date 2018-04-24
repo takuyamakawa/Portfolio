@@ -7,7 +7,7 @@ $(function () {
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
     var headerHeight = 60;
-		var position = target.offset().top - headerHeight;
+    var position = target.offset().top - headerHeight;
     $("html, body").animate({scrollTop:position}, speed, 'swing');
     return false;
   });
@@ -17,6 +17,7 @@ $(function () {
 $(function() {
   $('#top').hide().fadeIn(1500);
 });
+
 </script>
 
 <header>
@@ -43,21 +44,30 @@ $(function() {
   </div>
 </section>
 
-<section class="section about-top" id="about">
+<section class="section about-top">
   <div class="container">
     About
   </div>
 </section>
 
-<section class="section works-top" id="works">
+<section class="section works-top">
   <div class="container">
     Works
   </div>
 </section>
 
-<section class="section profile-top" id="profile">
+<section class="section profile-top">
   <div class="container">
     Profile
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="myphoto">
+      <%= image_tag 'me.png' %>
+    </div>
+
   </div>
 </section>
 

@@ -61,7 +61,12 @@ $(function() {
     <% @menus.each do |menu| %>
     <div class="column is-narrow">
       <div class="box">
-        <%= image_tag menu.imgpath %>
+        <figure>
+          <%= image_tag menu.imgpath %>
+          <figcaption>
+            <p class="menu-title"><%= menu.title %></p>
+          </figcaption>
+        </figure>
       </div>
     </div>
     <% end %>

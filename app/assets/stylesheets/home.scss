@@ -134,10 +134,10 @@ header {
     font-size: 20px;
   }
 }
-.box:hover .menu-title {
+.box>figure:hover .menu-title {
   top: 0;
 }
-.box:hover .menu-purpose {
+.box>figure:hover .menu-purpose {
   bottom: 6px;
 }
 

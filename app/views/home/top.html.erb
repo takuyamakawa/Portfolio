@@ -60,7 +60,9 @@ $(function() {
   <div class="columns is-mobile is-multiline is-centered">
     <% @menus.each do |menu| %>
     <div class="column is-narrow">
-      <%= image_tag menu.imgpath %>
+      <div class="box">
+        <%= image_tag menu.imgpath %>
+      </div>
     </div>
     <% end %>
   </div>

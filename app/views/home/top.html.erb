@@ -44,19 +44,39 @@ $(function() {
   </div>
 </section>
 
-<section class="section about-top">
+<section class="section about-top" id="about">
   <div class="container">
     About
   </div>
 </section>
 
-<section class="section works-top">
+<section class="section works-top" id="works">
   <div class="container">
     Works
   </div>
 </section>
 
-<section class="section profile-top">
+<section class="section">
+  <div class="columns is-mobile is-multiline is-centered">
+    <% @menus.each do |menu| %>
+    <div class="column is-narrow">
+      <div class="box">
+        <figure>
+          <a href="/"><%= image_tag menu.imgpath %></a>
+          <figcaption>
+            <p class="menu-title"><%= menu.title %></p>
+            <p class="menu-purpose"><%= menu.purpose %></p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</section>
+
+
+
+<section class="section profile-top" id="profile">
   <div class="container">
     Profile
   </div>

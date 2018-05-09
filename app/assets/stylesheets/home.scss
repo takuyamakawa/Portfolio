@@ -87,7 +87,7 @@ header {
   font-size: 50px;
 }
 
-.box{
+.menu{
   width: 350px;
   @media (min-width: 800px) {
     width: 500px;
@@ -97,7 +97,7 @@ header {
   text-align: center;
 }
 
-.box figure {
+.menu figure {
   position: relative;
   overflow: hidden;
   background: #c0c0c0;
@@ -136,10 +136,10 @@ header {
     font-size: 20px;
   }
 }
-.box>figure:hover .menu-title {
+.menu>figure:hover .menu-title {
   top: 0;
 }
-.box>figure:hover .menu-purpose {
+.menu>figure:hover .menu-purpose {
   bottom: 0;
 }
 

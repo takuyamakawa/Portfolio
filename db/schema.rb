@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180427061813) do
+ActiveRecord::Schema.define(version: 20180531081346) do
+
+  create_table "images", force: :cascade do |t|
+    t.integer "relation_id"
+    t.text "imgpath"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "menus", force: :cascade do |t|
     t.text "title"

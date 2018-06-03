@@ -14,11 +14,22 @@
         <p>
           <%= @menu.intro %>
         </p>
+
+        <%#
+        データベースから画像のデータが取得できているかを判別
+        取得してデータがあった場合、画像を表示する。
+        %>
+        <% if @img.empty? %>
+        <% else %>
+
         <% @img.each do |i| %>
         <figure>
           <%= image_tag i.imgpath %>
         </figure>
         <% end %>
+
+        <% end %>
+
         <p>
           <strong>使用技術：</strong> <small><%= @menu.tech %></small><br>
           <strong>使用言語：</strong> <small><%= @menu.lang %></small>

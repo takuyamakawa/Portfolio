@@ -1,18 +1,30 @@
 #detail-title{
-  font-size: 50px;
+  font-size: 60px;
 
   @media (min-width: 800px) {
-    font-size: 80px;
+    font-size: 90px;
   }
   padding: 50px 0;
 }
 
 #menu-purpose{
-  font-size: 30px;
+  font-size: 45px;
 
   @media (min-width: 800px) {
-    font-size: 50px;
+    font-size: 65px;
   }
+}
+
+.intro-text {
+  font-size: 10px;
+
+  @media (min-width: 800px) {
+    font-size: 20px;
+  }
+}
+
+.intro-text p{
+  padding: 10px 0;
 }
 
 #backbtn{
@@ -29,5 +41,5 @@
 
 .img-flex figure {
 	border: solid 2px #4e4e47;
-  width: 60%;
+  width: 80%;
 }

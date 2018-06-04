@@ -11,9 +11,6 @@
         <p class="subtitle is-2 has-text-centered" id="menu-purpose">
           <%= @menu.purpose %>
         </p>
-        <p>
-          <%= @menu.intro %>
-        </p>
 
         <%#
         データベースから画像のデータが取得できているかを判別
@@ -22,18 +19,28 @@
         <% if @img.empty? %>
         <% else %>
 
-        <% @img.each do |i| %>
-        <figure>
-          <%= image_tag i.imgpath %>
-        </figure>
+        <div class="app-img-box">
+          <% @img.each do |i| %>
+          <div class="img-flex">
+            <figure>
+              <%= image_tag i.imgpath %>
+            </figure>
+          </div>
+          <% end %>
+        </div>
         <% end %>
 
-        <% end %>
+        <div class="">
+          <p>
+            <%= @menu.intro %>
+          </p>
 
-        <p>
-          <strong>使用技術：</strong> <small><%= @menu.tech %></small><br>
-          <strong>使用言語：</strong> <small><%= @menu.lang %></small>
-        </p>
+          <p>
+            <strong>使用技術：</strong> <small><%= @menu.tech %></small><br>
+            <strong>使用言語：</strong> <small><%= @menu.lang %></small>
+          </p>
+        </div>
+
       </div>
     </div>
   </article>

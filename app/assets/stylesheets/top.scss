@@ -18,3 +18,16 @@
 #backbtn{
   padding-bottom: 15px;
 }
+
+.app-img-box {
+	margin-bottom: 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.img-flex figure {
+	border: solid 2px #4e4e47;
+  width: 60%;
+}

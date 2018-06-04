@@ -1,0 +1,53 @@
+<div>
+  <p class="title has-text-centered" id="detail-title">
+    <%= @menu.title %>
+  </p>
+</div>
+
+<div class="box">
+  <article class="media">
+    <div class="media-content">
+      <div class="content">
+        <p class="subtitle is-2 has-text-centered" id="menu-purpose">
+          <%= @menu.purpose %>
+        </p>
+
+        <%#
+        データベースから画像のデータが取得できているかを判別
+        取得してデータがあった場合、画像を表示する。
+        %>
+        <% if @img.empty? %>
+        <% else %>
+
+        <div class="app-img-box">
+          <% @img.each do |i| %>
+          <div class="img-flex">
+            <figure>
+              <%= image_tag i.imgpath %>
+            </figure>
+          </div>
+          <% end %>
+        </div>
+        <% end %>
+
+        <div class="intro-text">
+          <p>
+            <%= @menu.intro %>
+          </p>
+
+          <p>
+            <strong>使用技術：</strong> <small><%= @menu.tech %></small><br>
+            <strong>使用言語：</strong> <small><%= @menu.lang %></small>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </article>
+</div>
+
+<div>
+  <p class="subtitle has-text-centered" id="backbtn">
+    <%= link_to 'Back', '/' %>
+  </p>
+</div>

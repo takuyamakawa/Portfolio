@@ -1,0 +1,45 @@
+#detail-title{
+  font-size: 60px;
+
+  @media (min-width: 800px) {
+    font-size: 90px;
+  }
+  padding: 50px 0;
+}
+
+#menu-purpose{
+  font-size: 45px;
+
+  @media (min-width: 800px) {
+    font-size: 65px;
+  }
+}
+
+.intro-text {
+  font-size: 10px;
+
+  @media (min-width: 800px) {
+    font-size: 20px;
+  }
+}
+
+.intro-text p{
+  padding: 10px 0;
+}
+
+#backbtn{
+  padding-bottom: 15px;
+}
+
+.app-img-box {
+	margin-bottom: 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.img-flex figure {
+	border: solid 2px #4e4e47;
+  width: 80%;
+}

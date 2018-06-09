@@ -61,7 +61,7 @@ $(function() {
     <% @menus.each do |menu| %>
     <div class="column is-narrow">
       <%= link_to "/#{menu.id}" do %>
-      <div class="box menu">
+      <div class="box menu" id="menu">
         <figure>
           <%= image_tag menu.imgpath %>
           <% end %>
@@ -93,7 +93,7 @@ $(function() {
           <strong>趣味：</strong><small>音楽鑑賞、映画鑑賞、筋トレ、写真</small>
         </div>
         <div class="is-size-5">
-          <p>「アプリを作りたい」がきっかけで情報系の大学へ進み、プロジェクトやハッカソンを通して世の中の役に立つサービスを開発することを夢見ています。</p>
+          <p>「アプリを作りたい」がきっかけで情報系の大学へ進み、プロジェクトやハッカソンを通してサービス開発のスキルを磨いています。</p>
           </div>
         </div>
       </div>

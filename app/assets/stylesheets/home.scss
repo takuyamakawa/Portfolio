@@ -87,6 +87,10 @@ header {
   font-size: 50px;
 }
 
+#menu{
+  background: rgba(0,0,0,.02);
+}
+
 .menu{
   width: 350px;
   @media (min-width: 800px) {
@@ -154,6 +158,14 @@ header {
 .myphoto{
   width: 100%;
   text-align: center;
+}
+
+.is-size-4{
+  text-align: left;
+}
+
+.profiles{
+  padding: 4% 0;
 }
 
 #social-icon a {

@@ -30,14 +30,31 @@
         </div>
         <% end %>
 
+        <div class="is-size-5">
           <p>
             <%= @menu.intro %>
           </p>
+          <strong>使用技術：</strong> <small><%= @menu.tech %></small><br>
+          <strong>使用言語：</strong> <small><%= @menu.lang %></small>
+        </div>
 
-          <p>
-            <strong>使用技術：</strong> <small><%= @menu.tech %></small><br>
-            <strong>使用言語：</strong> <small><%= @menu.lang %></small>
-          </p>
+        <%#
+        データベースから関連サイトのデータが取得できているかを判別
+        取得してデータがあった場合、関連リンクを表示する。
+        %>
+        <% if @web.empty? %>
+        <% else %>
+
+        <div class="is-size-6" id="reference">
+          <strong>関連リンク</strong><br>
+          <ul>
+            <% @web.each do |w| %>
+            <li><%= link_to w.name, w.webpath %></li>
+            <% end %>
+          </ul>
+        </div>
+        <% end %>
+
       </div>
     </div>
   </article>

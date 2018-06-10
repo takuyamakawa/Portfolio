@@ -65,11 +65,20 @@ header {
 .about-top{
   text-align: center;
   background-color: #e0ffff;
-  font-size: 70px;
+
+  font-size: 50px;
+
+  @media (min-width: 800px) {
+    font-size: 70px;
+  }
 }
 
 .about-top img{
-  width: 8%;
+  width: 14%;
+
+  @media (min-width: 800px) {
+    width: 8%;
+  }
   opacity: 0.7;
   vertical-align: middle;
   display: inline;
@@ -78,11 +87,19 @@ header {
 .works-top{
   text-align: center;
   background-color: #ffc0cb;
-  font-size: 70px;
+  font-size: 50px;
+
+  @media (min-width: 800px) {
+    font-size: 70px;
+  }
 }
 
 .works-top img{
-  width: 8%;
+  width: 14%;
+
+  @media (min-width: 800px) {
+    width: 8%;
+  }
   opacity: 0.7;
   vertical-align: middle;
   display: inline;
@@ -153,11 +170,19 @@ header {
   text-align: center;
   background-color: #98fb98;
   padding-bottom: -100px;
-  font-size: 70px;
+  font-size: 50px;
+
+  @media (min-width: 800px) {
+    font-size: 70px;
+  }
 }
 
 .profile-top img{
-  width: 8%;
+  width: 14%;
+
+  @media (min-width: 800px) {
+    width: 8%;
+  }
   opacity: 0.7;
   vertical-align: middle;
   display: inline;

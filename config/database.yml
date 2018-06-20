@@ -30,3 +30,4 @@ production:
   encoding: unicode
   pool: 5
   database: db/production.postgresql
+  url: <%= ENV['DATABASE_URL'] %>
